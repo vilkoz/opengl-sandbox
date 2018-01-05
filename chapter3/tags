@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BINS	Makefile	/^BINS = $(SRC:.c=.o)$/;"	m
+EXTERN_GLOBALS_H	extern_globals.h	2;"	d
+FLAGS	Makefile	/^FLAGS = -lGL -lGLU -lGLEW -lglut -g$/;"	m
+GLOBALS_H	globals.h	2;"	d
+GL_SANDBOX_H	gl-sandbox.h	2;"	d
+H	gl-sandbox.h	11;"	d
+NAME	Makefile	/^NAME = a.out$/;"	m
+PROGRAM_COMPILE_ERROR	shaders.c	/^	PROGRAM_COMPILE_ERROR$/;"	e	enum:e_shader_compile_error	file:
+SHADER_COMPILE_ERROR	shaders.c	/^	SHADER_COMPILE_ERROR,$/;"	e	enum:e_shader_compile_error	file:
+SRC	Makefile	/^SRC = chapter2.c		\\$/;"	m
+W	gl-sandbox.h	10;"	d
+WINDOW_TITLE	gl-sandbox.h	12;"	d
+check_error	shaders.c	/^void	check_error(GLuint shaderId, unsigned LINE, e_shader_error type)$/;"	f
+cleanup	shaders.c	/^void	cleanup(void)$/;"	f
+color_buffer	gl-sandbox.h	/^	GLuint		color_buffer;$/;"	m	struct:s_ids
+create_shaders	shaders.c	/^void		create_shaders(void)$/;"	f
+create_vbo	shaders.c	/^void	create_vbo(void)$/;"	f
+destroy_shaders	shaders.c	/^void		destroy_shaders(void)$/;"	f
+destroy_vbo	shaders.c	/^void		destroy_vbo(void)$/;"	f
+e_shader_compile_error	shaders.c	/^typedef enum	e_shader_compile_error$/;"	g	file:
+e_shader_error	shaders.c	/^}				e_shader_error;$/;"	t	typeref:enum:e_shader_compile_error	file:
+fragment_shader	gl-sandbox.h	/^	GLuint		fragment_shader;$/;"	m	struct:s_ids
+fragment_shader	globals.h	/^const GLchar			* const fragment_shader = $/;"	v
+frames	gl-sandbox.h	/^	unsigned	frames;$/;"	m	struct:s_window
+h	gl-sandbox.h	/^	int			h;$/;"	m	struct:s_window
+handle	gl-sandbox.h	/^	int			handle;$/;"	m	struct:s_window
+idle_function	chapter2.c	/^void	idle_function(void)$/;"	f
+ids	globals.h	/^t_ids			ids;$/;"	v
+index_buffer	gl-sandbox.h	/^	GLuint		index_buffer;$/;"	m	struct:s_ids
+init_glut	chapter2.c	/^void	init_glut(int argc, char **argv)$/;"	f
+init_window	chapter2.c	/^void	init_window(int argc, char **argv)$/;"	f
+main	chapter2.c	/^int		main(int argc, char **argv)$/;"	f
+program	gl-sandbox.h	/^	GLuint		program;$/;"	m	struct:s_ids
+render_function	chapter2.c	/^void	render_function(void)$/;"	f
+resize_function	chapter2.c	/^void	resize_function(int w, int h)$/;"	f
+s_ids	gl-sandbox.h	/^typedef struct	s_ids$/;"	s
+s_window	gl-sandbox.h	/^typedef struct	s_window$/;"	s
+t_ids	gl-sandbox.h	/^}				t_ids;$/;"	t	typeref:struct:s_ids
+t_window	gl-sandbox.h	/^}				t_window;$/;"	t	typeref:struct:s_window
+timer_function	chapter2.c	/^void	timer_function(int count)$/;"	f
+title	gl-sandbox.h	/^	char		*title;$/;"	m	struct:s_window
+vao	gl-sandbox.h	/^	GLuint		vao;$/;"	m	struct:s_ids
+vbo	gl-sandbox.h	/^	GLuint		vbo;$/;"	m	struct:s_ids
+vertex_shader	gl-sandbox.h	/^	GLuint		vertex_shader;$/;"	m	struct:s_ids
+vertex_shader	globals.h	/^const GLchar			* const vertex_shader = $/;"	v
+w	gl-sandbox.h	/^	int			w;$/;"	m	struct:s_window
+win	globals.h	/^t_window		win = {W, H, 0, WINDOW_TITLE, 0};$/;"	v

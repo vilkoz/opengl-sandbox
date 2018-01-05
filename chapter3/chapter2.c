@@ -34,7 +34,8 @@ void	render_function(void)
 {
 	win.frames += 1;
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	/* glDrawArrays(GL_TRIANGLE_STRIP, 0, 4); */
+	glDrawElements(GL_TRIANGLES, 48, GL_UNSIGNED_BYTE, (GLvoid*)0);
 	glutSwapBuffers();
 	glutPostRedisplay();
 }
